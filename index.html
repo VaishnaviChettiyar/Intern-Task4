@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IceCream Parlour</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>IceCream Parlour</h1>
+
+    <button class="hamburger" id="menu-toggle">&#9776;</button>
+
+    <nav id="nav-menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="columns">
+      <div class="column">
+        <h2>Black Current</h2>
+        <p>You can’t buy happiness, but you can buy ice cream, and that is pretty much the same thing.</p>
+      </div>
+      <div class="column">
+        <h2>Mixed Fruit</h2>
+        <p>I scream. You scream. We all scream for ice cream.</p>
+      </div>
+      <div class="column">
+        <h2>And More...</h2>
+        <p>Chocolate, vanilla, mango, mint chocolate, cherry, blackberry, blueberry, coconut, etc... </p>
+      </div>
+    </div>
+
+
+    <img src="./banner.jpg" alt="Sample Image" />
+  </div>
+
+  <footer>
+    <p>© 2025 IceCream Parlour</p>
+  </footer>
+
+  <script>
+    document.getElementById('menu-toggle').addEventListener('click', function () {
+      const menu = document.getElementById('nav-menu');
+      menu.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>
